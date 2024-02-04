@@ -62,21 +62,14 @@ detail = pygame.image.load('/Users/sherina./Guess-Game/Graphics/Hearts.png').con
 
 Button1 = Button("Start", 120,45,(240,345),6)
 x = 0
+
 def events():
      for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
             exit() 
-
-
-    
-
-
      while True: 
         events()
-        #if events.type == pygame.MOUSEBUTTONDOWN:
-               # if Button1.checkForInput(MENU_MOUSE_POS):
-                   # play()
         rel_x = x % bkgd.get_rect().width
         SCREEN.blit(bkgd,(rel_x - bkgd.get_rect().width,0))
         x-= 1
@@ -86,37 +79,3 @@ def events():
         Button1.draw()
         pygame.display.update()
         clock.tick(60)#fps
-
-
-
-
-'''
-
-
-
-
-def get_font(size):
-    return pygame.font.Font('/Users/sherina./Guess-Game/Font/Minecraft.ttf', size)
-def start():
-    while True:
-        SCREEN.fill('black')
-
-
-#text1 = font.render('START GAME', False, 'black')
-
-while True: #keeps the window continously opened
-    for event in pygame.event.get(): #need to create quit button before running screen
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            exit()  #closes it out completely
-
-    screen.blit(surface1,(0,0))
-    #screen.blit(text1,(130,360))
-
-    pygame.display.update()
-    clock.tick(60)#fps
-
-
-'''
-
-
