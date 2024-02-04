@@ -76,9 +76,9 @@ def events():
 
      while True: 
         events()
-        if events.type == pygame.MOUSEBUTTONDOWN:
-                if Button1.checkForInput(MENU_MOUSE_POS):
-                    play()
+        #if events.type == pygame.MOUSEBUTTONDOWN:
+               # if Button1.checkForInput(MENU_MOUSE_POS):
+                   # play()
         rel_x = x % bkgd.get_rect().width
         SCREEN.blit(bkgd,(rel_x - bkgd.get_rect().width,0))
         x-= 1
