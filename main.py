@@ -56,9 +56,9 @@ SCREEN = pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
 pygame.display.set_caption('Menu') #puts the game name on the top of the window
 clock = pygame.time.Clock() #fps
 
-gui_font = pygame.font.Font('/Users/sherina./Guess-Game/Font/VCR_OSD_MONO_1.001.ttf', 30)
-bkgd = pygame.image.load('/Users/sherina./Guess-Game/Graphics/Clouds.png').convert()
-detail = pygame.image.load('/Users/sherina./Guess-Game/Graphics/Hearts.png').convert_alpha()
+gui_font = pygame.font.Font('/Users/sherina./Guess_Pix/Font/VCR_OSD_MONO_1.001.ttf', 30)
+bkgd = pygame.image.load('/Users/sherina./Guess_Pix/Graphics/Clouds.png').convert()
+detail = pygame.image.load('/Users/sherina./Guess_Pix/Graphics/Hearts.png').convert_alpha()
 
 Button1 = Button("Start", 120,45,(240,345),6)
 x = 0
